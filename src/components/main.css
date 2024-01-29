@@ -21,4 +21,14 @@
   background-size: cover;
   justify-self: center;
   align-self: center;
+  animation: Img-spin infinite 20s linear;
+}
+
+@keyframes Img-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
