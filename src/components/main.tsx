@@ -2,7 +2,7 @@ import './Main.css';
 
 function Main() {
   return (
-    <div className='main'>
+    <div id='main'>
       <div className='css-1c'></div>
       <div className='css-2c'></div>
     </div>

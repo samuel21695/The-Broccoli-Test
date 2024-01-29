@@ -1,4 +1,7 @@
 .App {
+  display: grid;
+  grid-template-rows: 1fr auto; /* Header, Main, Footer의 크기 비율 조정 */
+  height: 100vh; /* 전체 화면 높이로 설정 */
   text-align: center;
 }
 

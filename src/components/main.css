@@ -1,0 +1,9 @@
+#main {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 첫 번째 열은 1fr, 두 번째 열은 2fr */
+}
+
+.css-1c{
+  background-color: #759563;
+}
