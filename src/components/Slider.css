@@ -16,47 +16,37 @@
   transition: opacity .2s;
 }
 
+/* 브로콜리 수에 따라 슬라이더의 배경색 변경 */
+.broccoli-1 .slider {
+  background: #ffcc00; /* 브로콜리 1개일 때 슬라이더의 배경색 */
+}
+
+.broccoli-2 .slider {
+  background: #ff9900; /* 브로콜리 2개일 때 슬라이더의 배경색 */
+}
+
+.broccoli-3 .slider {
+  background: #ff6600; /* 브로콜리 3개일 때 슬라이더의 배경색 */
+}
+
+.broccoli-4 .slider {
+  background: #ff3300; /* 브로콜리 4개일 때 슬라이더의 배경색 */
+}
+
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: #4CAF50; /* 슬라이더 포인터의 기본 색상 */
+  width: 30px; /* 슬라이더 포인터의 크기 */
+  height: 30px; /* 슬라이더 포인터의 크기 */
+  background: url('/images/broccoli.png') no-repeat center; /* 브로콜리 모양의 이미지를 사용 */
+  background-size: contain; /* 이미지 크기에 맞게 조절 */
   cursor: pointer;
 }
 
 .slider::-moz-range-thumb {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: #4CAF50; /* 슬라이더 포인터의 기본 색상 */
+  width: 30px; /* 슬라이더 포인터의 크기 */
+  height: 30px; /* 슬라이더 포인터의 크기 */
+  background: url('/images/broccoli.png') no-repeat center; /* 브로콜리 모양의 이미지를 사용 */
+  background-size: contain; /* 이미지 크기에 맞게 조절 */
   cursor: pointer;
-}
-
-/* 각 브로콜리 수치에 따른 슬라이더의 색상 변경 */
-.broccoli-1 .slider::-webkit-slider-thumb {
-  background: #ffcc00; /* 브로콜리 1개일 때 슬라이더 포인터의 색상 */
-}
-
-.broccoli-2 .slider::-webkit-slider-thumb {
-  background: #ff9900; /* 브로콜리 2개일 때 슬라이더 포인터의 색상 */
-}
-
-.broccoli-3 .slider::-webkit-slider-thumb {
-  background: #ff6600; /* 브로콜리 3개일 때 슬라이더 포인터의 색상 */
-}
-
-.broccoli-4 .slider::-webkit-slider-thumb {
-  background: #ff3300; /* 브로콜리 4개일 때 슬라이더 포인터의 색상 */
-}
-
-/* 슬라이더의 값 표시를 위한 스타일 */
-.value {
-  position: absolute;
-  top: -25px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 16px;
-  font-weight: bold;
 }

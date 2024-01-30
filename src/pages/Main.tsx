@@ -1,6 +1,5 @@
 
 import './Main.css';
-import SliderComponent from '../components/Slider';
 
 function Main() {
   return (
@@ -13,7 +12,6 @@ function Main() {
       <div className='css-2c'>
         <div className='broccoli'></div>
       </div>
-      <SliderComponent></SliderComponent>
     </div>
   );
 }
