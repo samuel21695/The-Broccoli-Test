@@ -7,5 +7,50 @@
 .target {
   width: 100px;
   height: 100px;
-  background-color: gray;
+  background-image: url(/images/broccoli.png);
+  background-size: cover;
+  cursor: pointer;
+}
+
+/* 수정된 biteAnimation 클래스들 */
+
+.animation-2 {
+  animation: biteAnimation 0.5s forwards 1s;
+}
+
+.animation-3 {
+  animation: biteAnimation 0.5s forwards 2s;
+}
+
+.animation-4 {
+  animation: biteAnimation 0.5s forwards 3s;
+}
+
+.animation-5 {
+  animation: biteAnimation 0.5s forwards 4s;
+}
+
+/* 각각의 애니메이션 효과 */
+/* 수정된 biteAnimation */
+@keyframes biteAnimation {
+  0% {
+    transform: scale(1); /* 원래 크기 */
+    opacity: 1; /* 투명도 */
+  }
+  20% {
+    transform: scale(0.8); /* 5분의 4 크기로 축소 */
+    opacity: 0.8; /* 80%의 투명도 */
+  }
+  40% {
+    transform: scale(0.6); /* 3분의 5 크기로 축소 */
+    opacity: 0.6; /* 60%의 투명도 */
+  }
+  60% {
+    transform: scale(0.4); /* 2분의 5 크기로 축소 */
+    opacity: 0.4; /* 40%의 투명도 */
+  }
+  80% {
+    transform: scale(0.2); /* 1분의 5 크기로 축소 */
+    opacity: 0.2; /* 20%의 투명도 */
+  }
 }

@@ -11,23 +11,16 @@ function Test () {
     // 애니메이션 횟수가 5 미만일 때 애니메이션 실행
     if( animationCount < 5) {
       setAnimationCount(animationCount + 1);  // 애니메이션 횟 수 증가
+      setEatenBroccoli(eatenBroccoli + 1); // 먹은 브로콜리 수 증가
     }
   }
 
-  const onAnimationEnd = () => {
-    // 애니메이션이 5번 실행된 후 브쿠롤리 수를 증가시키고 애니메이션 횟수 초기화
-    if (animationCount === 5) {
-      setEatenBroccoli(eatenBroccoli + 1); // 먹은 브로콜리 수 증가
-      setAnimationCount(0); // 애니메이션 횟수 초기화
-    } 
-  }
 
   return (
     <div className='test-container'>
       {animationCount < 5 && (
         <div 
           className={`target animation-${animationCount + 1}`}
-          onAnimationEnd={onAnimationEnd} // 애니메이션 종료 시 실행될 함수
           onClick={eatBroccoli} // 클릭 시 먹은 브로콜리 수를 증가시키고 애니매이션 횟수 증가
         ></div>
       )}
