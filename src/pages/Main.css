@@ -14,6 +14,8 @@
 
 .css-2c{
   display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 .broccoli{
@@ -23,8 +25,6 @@
   border-radius: 50%;
   background-image: url('../../images/broccoli.png');
   background-size: cover;
-  justify-self: center;
-  align-self: center;
   animation: Img-spin infinite 20s linear;
 }
 

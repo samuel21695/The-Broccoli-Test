@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom'
 import './Main.css';
 
 function Main() {
@@ -10,7 +10,9 @@ function Main() {
         <p>Ask yourself “would I eat raw broccoli right now?”</p>
       </div>
       <div className='css-2c'>
-        <div className='broccoli'></div>
+        <Link to="/test">
+          <div className='broccoli'></div>
+        </Link>
       </div>
     </div>
   );

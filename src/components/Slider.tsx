@@ -10,7 +10,8 @@ const SliderComponent: React.FC = () => {
 
   return (
     <div className={`slider-container broccoli-${value}`}>
-      <input 
+      <input placeholder='slider' 
+      // 에러 떠서 placeholder 추가
         type="range" 
         min={1} 
         max={4} 
