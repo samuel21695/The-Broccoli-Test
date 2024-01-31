@@ -5,8 +5,10 @@ import Test from '../pages/test/Test';
 
 function Router () {
   return(
-    <></>
-  )
+    <Routes>
+      <Route path="/" element={<Main/>}></Route>
+    </Routes>
+  );
 }
 
 export default Router;
