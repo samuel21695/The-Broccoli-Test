@@ -1,10 +1,9 @@
-import './Test.css'
+import './BroccoliTest.css'
 
 function Test () {
   return (
     <div className='test-container'>
-      <div className=''>
-        test
+      <div className='target'>
       </div>
     </div>
   )
