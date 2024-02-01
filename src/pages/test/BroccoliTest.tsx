@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+
+import ConditionOne from './results/ConditionOne';
+import ConditionTwo from './results/ConditionTwo';
 import './BroccoliTest.css'
 
 function Test () {
@@ -23,6 +26,12 @@ function Test () {
       )}
       {/* 먹은 브로콜리 수 */}
       <p>Eaten Broccoli: {eatenBroccoli}</p>
+      {eatenBroccoli === 1 && (
+        <ConditionTwo/>
+      )}
+      {eatenBroccoli === 2 && (
+        <ConditionTwo/>
+      )}
     </div>
   )
 }
