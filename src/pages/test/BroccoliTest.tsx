@@ -2,6 +2,14 @@ import React, { useState } from 'react';
 
 import ConditionOne from './results/ConditionOne';
 import ConditionTwo from './results/ConditionTwo';
+import ConditionThree from './results/ConditionThree';
+import ConditionFour from './results/ConditionFour';
+import ConditionFive from './results/ConditionFive';
+
+import Stack from '@mui/material/Stack';
+import IconButton from '@mui/material/IconButton';
+import IosShareRoundedIcon from '@mui/icons-material/IosShareRounded';
+
 import './BroccoliTest.css'
 
 function Test () {
@@ -30,6 +38,20 @@ function Test () {
       {eatenBroccoli === 2 && (
         <ConditionTwo/>
       )}
+      {eatenBroccoli === 3 && (
+        <ConditionThree/>
+      )}
+      {eatenBroccoli === 4 && (
+        <ConditionFour/>
+      )}
+      {eatenBroccoli > 4 && (
+        <ConditionFive/>
+      )}
+      <Stack direction="row" spacing={1}>
+        <IconButton>
+          <IosShareRoundedIcon />
+        </IconButton>
+      </Stack>
     </div>
   )
 }
