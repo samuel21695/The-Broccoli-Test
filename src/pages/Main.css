@@ -1,35 +1,36 @@
 #main {
-
   display: grid;
-  grid-template-columns: 1fr 1fr; /* 첫 번째 열은 1fr, 두 번째 열은 2fr */
+  align-items: center;
+  background-color: #DCE7D7;
+
 }
 
 .css-1c{
   display: flex;
+  color: #2f7635;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #759563;
 }
 
-.css-2c{
-  display: grid;
-  justify-content: center;
-  align-items: center;
+.css-1c > h1 {
+  font-size: 64px;
+  font-family:'Times New Roman', Times, serif;
 }
+
 
 .broccoli{
   width: 250px;
   height: 250px;
-  border: solid 1px gray;
   border-radius: 50%;
-  background-image: url('../../images/broccoli.png');
+  background-image: url('../../images/broccoli2.png');
   background-size: cover;
-  animation: Img-spin infinite 20s linear;
+  animation: Img-spin infinite 30s linear;
   transition: 0.5s ease;
 }
 
 .broccoli:hover{
+  margin: 2rem;
   cursor: pointer;
   width: 275px;
   height: 275px;

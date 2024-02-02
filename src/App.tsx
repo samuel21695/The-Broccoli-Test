@@ -10,7 +10,6 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Router></Router>
-        <Footer></Footer>      
       </BrowserRouter>
     </div>
   );
