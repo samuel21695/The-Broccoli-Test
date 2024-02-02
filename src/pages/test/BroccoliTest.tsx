@@ -6,8 +6,11 @@ import ConditionThree from './results/ConditionThree';
 import ConditionFour from './results/ConditionFour';
 import ConditionFive from './results/ConditionFive';
 
+// Material UI
 import Stack from '@mui/material/Stack';
 import IconButton from '@mui/material/IconButton';
+import SaveAltIcon from '@mui/icons-material/SaveAlt';
+import LinkIcon from '@mui/icons-material/Link';
 import IosShareRoundedIcon from '@mui/icons-material/IosShareRounded';
 
 import './BroccoliTest.css'
@@ -49,7 +52,10 @@ function Test () {
       )}
       <Stack direction="row" spacing={1}>
         <IconButton>
-          <IosShareRoundedIcon />
+          <SaveAltIcon />
+        </IconButton>
+        <IconButton>
+          <LinkIcon />
         </IconButton>
       </Stack>
     </div>
