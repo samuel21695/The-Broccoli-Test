@@ -1,8 +1,8 @@
 #main {
   display: grid;
+  grid-template-rows: auto 1fr;
   align-items: center;
   background-color: #DCE7D7;
-
 }
 
 .css-1c{
@@ -20,8 +20,8 @@
 
 
 .broccoli{
-  width: 250px;
-  height: 250px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   background-image: url('../../images/broccoli2.png');
   background-size: cover;
@@ -32,8 +32,8 @@
 .broccoli:hover{
   margin: 2rem;
   cursor: pointer;
-  width: 275px;
-  height: 275px;
+  width: 250px;
+  height: 250px;
   transition: 0.5s ease-in-out;
 }
 
