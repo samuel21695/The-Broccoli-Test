@@ -18,11 +18,6 @@
   font-family:'Times New Roman', Times, serif;
 }
 
-.css-2c{
-  display: grid;
-  justify-content: center;
-  align-items: center;
-}
 
 .broccoli{
   width: 250px;
@@ -35,6 +30,7 @@
 }
 
 .broccoli:hover{
+  margin: 2rem;
   cursor: pointer;
   width: 275px;
   height: 275px;
