@@ -29,27 +29,29 @@ function Test () {
 
   return (
     <div className='test-container'>
-        <div 
-          className={`target animation-${eatenBroccoli+ 1}`}
-          onClick={eatBroccoli} // 클릭 시 먹은 브로콜리 수를 증가시키고 애니매이션 횟수 증가
-        ></div>
+      <div 
+        className={`target animation-${eatenBroccoli+ 1}`}
+        onClick={eatBroccoli} // 클릭 시 먹은 브로콜리 수를 증가시키고 애니매이션 횟수 증가
+      ></div>
       {/* 먹은 브로콜리 수 */}
       <p>Eaten Broccoli: {eatenBroccoli}</p>
-      {eatenBroccoli === 1 && (
-        <ConditionOne/>
-      )}
-      {eatenBroccoli === 2 && (
-        <ConditionTwo/>
-      )}
-      {eatenBroccoli === 3 && (
-        <ConditionThree/>
-      )}
-      {eatenBroccoli === 4 && (
-        <ConditionFour/>
-      )}
-      {eatenBroccoli > 4 && (
-        <ConditionFive/>
-      )}
+      <div className='conditions'>
+        {eatenBroccoli === 1 && (
+          <ConditionOne/>
+        )}
+        {eatenBroccoli === 2 && (
+          <ConditionTwo/>
+        )}
+        {eatenBroccoli === 3 && (
+          <ConditionThree/>
+        )}
+        {eatenBroccoli === 4 && (
+          <ConditionFour/>
+        )}
+        {eatenBroccoli > 4 && (
+          <ConditionFive/>
+        )}
+      </div>
       <Stack direction="row" spacing={1}>
         <IconButton>
           <SaveAltIcon />
