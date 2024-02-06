@@ -7,11 +7,11 @@ import PersonIcon from '@mui/icons-material/Person';
 function Header () {
   return(
     <div className='header'>
-      <div className='pages'>
+      <div className='header-left'>
         <div>Test One</div>
         <div>Test Two</div>
       </div>
-      <div>
+      <div className='header-right'>
         <p>KR / EN </p>
         <IconButton className='profile'>
           <PersonIcon/>

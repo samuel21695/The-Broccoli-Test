@@ -1,32 +1,41 @@
 .header {
+  width: 100vw;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   color: #2f7635;
 }
 
-.pages {
+.header-left {
   display: flex;
 }
 
-.pages > div {
+.header-left > div {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 1rem;
-  width: 120px;
-  height: 50px;
+  width: 150px;
+  height: 60px;
   border: 1px solid #2f7635;
+  margin-top: 3rem;
+  margin-left: 5rem;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 26px;
+  font-size: 32px;
   font-weight: bold;
   border-radius: 32px;
+  transition:ease 0.5s;
 }
 
-.pages > div:hover {
+.header-left > div:hover {
+  border: 1px solid black;
+  background-color: #2f7635;
+  color: #DCE7D7;
   cursor: pointer;
 }
 
-.profile {
-  margin: 1rem;
-  float:right;
+.header-right {
+  display: flex;
+  margin-top: 3rem;
+  margin-right: 5rem;
+  right: 0;
 }
