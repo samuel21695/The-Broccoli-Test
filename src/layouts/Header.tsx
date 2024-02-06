@@ -11,10 +11,12 @@ function Header () {
         <div>Test One</div>
         <div>Test Two</div>
       </div>
-      <div>KR / EN </div>
-      <IconButton className='profile'>
-        <PersonIcon/>
-      </IconButton>      
+      <div>
+        <p>KR / EN </p>
+        <IconButton className='profile'>
+          <PersonIcon/>
+        </IconButton>      
+      </div>
     </div>
   )
 }

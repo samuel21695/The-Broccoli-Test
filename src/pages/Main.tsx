@@ -7,7 +7,7 @@ function Main() {
     <>
       <div id='main'>
         <Header></Header>
-        <div className='css-1c'>
+        <div className='main-contents'>
           <h1>Am I really hungry?</h1>
           <Link to="/test">
             <div className='broccoli'></div>

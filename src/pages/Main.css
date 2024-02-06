@@ -5,7 +5,7 @@
   background-color: #DCE7D7;
 }
 
-.css-1c{
+.main-contents{
   display: flex;
   color: #2f7635;
   flex-direction: column;
@@ -13,7 +13,7 @@
   justify-content: center;
 }
 
-.css-1c > h1 {
+.main-contents > h1 {
   font-size: 64px;
   font-family:'Times New Roman', Times, serif;
 }
