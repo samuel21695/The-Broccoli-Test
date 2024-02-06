@@ -12,12 +12,12 @@ function Header () {
         <div>Test Two</div>
       </div>
       <div className='header-right'>
-        <p>KR / EN </p>
+        <p className='language'>KR / EN </p>
         <IconButton className='profile'>
-          <PersonIcon/>
+          <PersonIcon color='success'/>
         </IconButton>      
       </div>
-    </div>
+    </div>  
   )
 }
 
