@@ -1,5 +1,29 @@
 .header {
   display: flex;
+  align-items: center;
+  color: #2f7635;
+}
+
+.pages {
+  display: flex;
+}
+
+.pages > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  width: 120px;
+  height: 50px;
+  border: 1px solid #2f7635;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 26px;
+  font-weight: bold;
+  border-radius: 32px;
+}
+
+.pages > div:hover {
+  cursor: pointer;
 }
 
 .profile {

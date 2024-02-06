@@ -7,7 +7,7 @@ import PersonIcon from '@mui/icons-material/Person';
 function Header () {
   return(
     <div className='header'>
-      <div>
+      <div className='pages'>
         <div>Test One</div>
         <div>Test Two</div>
       </div>
