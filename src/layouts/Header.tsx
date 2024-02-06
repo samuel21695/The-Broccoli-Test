@@ -1,5 +1,7 @@
 import './Header.css'
 
+import { Link } from 'react-router-dom'
+
 import Stack from '@mui/material/Stack';
 import IconButton from '@mui/material/IconButton';
 import PersonIcon from '@mui/icons-material/Person';
@@ -12,7 +14,11 @@ function Header () {
         <div>Test Two</div>
       </div>
       <div className='header-right'>
-        <p className='language'>KR / EN </p>
+        <div className='language'>
+          <Link to ='KR' className='kr'>KR</Link>
+          <p>/</p>
+          <Link to = ''>EN</Link>
+        </div>
         <IconButton className='profile'>
           <PersonIcon color='success'/>
         </IconButton>      
