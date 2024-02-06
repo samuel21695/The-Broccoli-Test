@@ -1,3 +1,7 @@
+.header {
+  display: flex;
+}
+
 .profile {
   margin: 1rem;
   float:right;
