@@ -6,12 +6,13 @@
 }
 
 .target {
-  width: 300px;
-  height: 300px;
+  width: 150px;
+  height: 150px;
   /* background-color: brown; */
   background-image: url(/images/broccoli.png);
   background-size: cover;
   cursor: pointer;
+
 }
 
 .conditions {
@@ -22,87 +23,28 @@
 /* 수정된 biteAnimation 클래스들 */
 
 .animation-2 {
-  animation: bite 3s;
+  animation: biteAnimation 2s;
 }
 
 /* 각각의 애니메이션 효과 */
 /* 수정된 biteAnimation */
 @keyframes biteAnimation {
   0% {
-    clip-path: circle(0% at 50% 50%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
   20% {
-    clip-path: circle(20% at 20% 80%);
+    clip-path: polygon(39% 36%, 50% 27%, 55% 13%, 51% 0, 100% 0, 100% 100%, 0 100%, 0 23%, 11% 31%, 26% 37%);
   }
   40% {
-    clip-path: circle(40% at 80% 20%);
+    clip-path: polygon(48% 33%, 56% 32%, 65% 45%, 79% 52%, 90% 49%, 100% 100%, 0 100%, 0 28%, 19% 38%, 36% 37%);
   }
   60% {
-    clip-path: circle(60% at 20% 20%);
+    clip-path: polygon(44% 61%, 54% 53%, 65% 45%, 79% 52%, 90% 49%, 100% 100%, 0 100%, 0 48%, 13% 63%, 29% 65%);
   }
   80% {
-    clip-path: circle(80% at 80% 80%);
+    clip-path: polygon(44% 61%, 55% 73%, 70% 79%, 88% 79%, 100% 78%, 98% 100%, 0 100%, 0 48%, 13% 63%, 29% 65%);
   }
   100% {
-    clip-path: circle(100% at 50% 50%);
+    clip-path: polygon(100% 100%, 100% 100%, 0 100%, 0 100%);
   }
-}
-
-@keyframes bite {
-  0% {
-    clip-path: polygon(61% 15%, 70% 30%, 88% 31%, 100% 20%, 100% 100%, 0 100%, 0 61%, 0 0, 66% 0);
-  }
-    
-}
-
-/* ------------------------------ */
-
-.bite {
-  /* Reset button styles */
-  appearance: none;
-  border: none;
-  background: none;
-  padding: 0;
-  margin: 0;
-
-  > span {
-    width: 300px;
-    height: 300px;
-    padding: 0.25em;
-    background-color: cadetblue;
-    display: block;
-
-  .crumbs {
-    position: absolute;
-    height: .4em;
-    width: .4em;
-    border-radius: 50%;
-    background: pink;
-    top: 50px;
-    left: 50px;
-
-    &:before, &:after {
-      content: '';
-    }
-  }
-}
-
-.bite:focus,
-.bite:active {
-
-  .bar {
-    clip-path: polygon(
-      53% 18%, 
-      71% 22%, 
-      77% 15%, 
-      83% 0, 
-      100% 0, 
-      100% 100%,
-      0 100%, 
-      0 0, 
-      16% 0, 
-      23% 14%, 
-      36% 24%);
-}  }
-
 }
