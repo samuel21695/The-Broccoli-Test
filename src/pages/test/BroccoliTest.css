@@ -102,10 +102,10 @@
     border-radius: 50%;
     background: pink;
     top: 50px;
-    left: 50px
+    left: 50px;
 
-    &:before, &:before {
-      
+    &:before, &:after {
+      content: '';
     }
   }
 }
