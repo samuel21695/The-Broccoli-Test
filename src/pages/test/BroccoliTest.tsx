@@ -30,7 +30,9 @@ function Test () {
   return (
     <div className='test-container'>
       <button className='bite'>
-        <span>test</span>
+        <span className='bar'>
+          <span>test</span>
+        </span>
         <div className="crumbs"></div>
       </button>
       <div 

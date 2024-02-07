@@ -71,29 +71,6 @@
     padding: 0.25em;
     background-color: cadetblue;
     display: block;
-    clip-path: polygon(
-      0% 0%, 
-      70% 0%, 
-      100% 50%,
-      100% 100%, 
-      70% 100%, 
-      0% 100%, 
-      0% 70%, 
-      0% 30%);
-
-      clip-path: polygon(
-        53% 18%, 
-        71% 22%, 
-        77% 15%, 
-        83% 0, 
-        100% 0, 
-        100% 100%,
-        0 100%, 
-        0 0, 
-        16% 0, 
-        23% 14%, 
-        36% 24%);
-  }
 
   .crumbs {
     position: absolute;
@@ -108,4 +85,24 @@
       content: '';
     }
   }
+}
+
+.bite:focus,
+.bite:active {
+
+  .bar {
+    clip-path: polygon(
+      53% 18%, 
+      71% 22%, 
+      77% 15%, 
+      83% 0, 
+      100% 0, 
+      100% 100%,
+      0 100%, 
+      0 0, 
+      16% 0, 
+      23% 14%, 
+      36% 24%);
+}  }
+
 }
