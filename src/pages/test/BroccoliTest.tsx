@@ -29,6 +29,9 @@ function Test () {
 
   return (
     <div className='test-container'>
+      <div className='bite'>
+        
+      </div>
       <div 
         className={`target animation-${eatenBroccoli+ 1}`}
         onClick={eatBroccoli} // 클릭 시 먹은 브로콜리 수를 증가시키고 애니매이션 횟수 증가
