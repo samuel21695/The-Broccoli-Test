@@ -29,6 +29,7 @@ function Test () {
 
   return (
     <div className='test-container'>
+      <h1>Feeling hungry?🤔</h1>
       <div 
         className={`target animation-${eatenBroccoli+ 1}`}
         onClick={eatBroccoli} // 클릭 시 먹은 브로콜리 수를 증가시키고 애니매이션 횟수 증가
@@ -54,10 +55,10 @@ function Test () {
       </div>
       <Stack direction="row" spacing={1}>
         <IconButton>
-          <SaveAltIcon />
+          <SaveAltIcon color='success'/>
         </IconButton>
         <IconButton>
-          <LinkIcon />
+          <LinkIcon color='success'/>
         </IconButton>
       </Stack>
     </div>

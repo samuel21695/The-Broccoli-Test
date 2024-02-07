@@ -12,8 +12,12 @@
   background-image: url(/images/broccoli.png);
   background-size: cover;
   cursor: pointer;
-
+  transition: ease-in-out 0.5s;
 }
+
+.target:hover{
+  transform: translateY(-5%);
+} 
 
 .conditions {
   width: 40vw;
