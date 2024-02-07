@@ -31,6 +31,7 @@ function Test () {
     <div className='test-container'>
       <button className='bite'>
         <span>test</span>
+        <div className="crumbs"></div>
       </button>
       <div 
         className={`target animation-${eatenBroccoli+ 1}`}
