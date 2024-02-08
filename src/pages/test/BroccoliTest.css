@@ -12,7 +12,7 @@
   background-image: url(/images/broccoli.png);
   background-size: cover;
   cursor: pointer;
-  transition: ease-in-out 0.5s;
+  transition: ease-in 0.5s;
 }
 
 .target:hover{
@@ -28,6 +28,10 @@
 
 .animation-2 {
   animation: biteAnimation 2s;
+}
+
+.animation-3 {
+  animation: biteAnimation 1s;
 }
 
 /* 각각의 애니메이션 효과 */

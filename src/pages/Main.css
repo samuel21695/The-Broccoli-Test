@@ -1,6 +1,5 @@
 #main {
   display: grid;
-  grid-template-rows: auto 1fr;
   align-items: center;
   background-color: #DCE7D7;
 }

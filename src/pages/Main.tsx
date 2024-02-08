@@ -6,7 +6,6 @@ function Main() {
   return (
     <>
       <div id='main'>
-        <Header></Header>
         <div className='main-contents'>
           <h1>Am I really hungry?</h1>
           <Link to="/test">
