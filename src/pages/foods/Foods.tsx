@@ -2,7 +2,7 @@ import './Foods.css'
 
 function Foods () {
   return (
-    <></>
+    <>test</>
   )
 }
 
