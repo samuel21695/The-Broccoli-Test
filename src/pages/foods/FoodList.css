@@ -1,0 +1,18 @@
+.searchGroup {
+  display: flex;
+  align-items: center;
+}
+
+.searchButton {
+  width: 56px;
+  height: 56px;
+  border: 1px solid rgb(165, 165, 165);
+  border-radius: 7%;
+  background-color: inherit;
+}
+
+.searchButton:hover {
+  border: 1px solid #2f7635;
+  background-color: #2f7635;
+  cursor: pointer;
+}
