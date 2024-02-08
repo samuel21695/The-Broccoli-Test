@@ -21,6 +21,11 @@ function FoodList () {
           </Box>
           <button className='searchButton'>test</button>
         </div>
+          <select name="foodFilter" id="filter">
+            <option value="select">select</option>
+            <option value="broccoli value">Brocolli score</option>
+            <option value="Date">Date</option>
+          </select>
       </div>
       <div className='listGroup'>
 
