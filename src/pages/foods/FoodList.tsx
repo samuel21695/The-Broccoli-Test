@@ -6,7 +6,14 @@ function FoodList () {
   return (
     <div className='foodLists'>
       <div className='searchGroup'>
-        <Box>
+        <Box
+        component="form"
+        sx={{
+          '& .MuiFormControl-root': { marginTop: 5, width: '300px' },
+        }}
+        noValidate
+        autoComplete="off"
+        >
           <TextField id="outlined-basic" label="search" color="success" variant="outlined"></TextField>
         </Box>
         {/* <label htmlFor="search">
