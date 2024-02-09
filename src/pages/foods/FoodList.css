@@ -1,3 +1,9 @@
+.foodSearch {
+  display: flex;
+  margin: 5rem;
+  justify-content: space-between;
+}
+
 .searchGroup {
   display: flex;
   align-items: center;
@@ -6,6 +12,7 @@
 .searchButton {
   width: 56px;
   height: 56px;
+  margin-left: 1rem;;
   border: 1px solid rgb(165, 165, 165);
   border-radius: 7%;
   background-color: inherit;
@@ -15,4 +22,11 @@
   border: 1px solid #2f7635;
   background-color: #2f7635;
   cursor: pointer;
+}
+
+.filter {
+  width: 100px;
+  height: 56px;
+  border-radius: 40px;
+  border: 1px solid #2f7635;
 }

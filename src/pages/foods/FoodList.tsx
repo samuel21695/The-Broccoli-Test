@@ -21,8 +21,8 @@ function FoodList () {
           </Box>
           <button className='searchButton'>test</button>
         </div>
-          <select name="foodFilter" id="filter">
-            <option value="select">select</option>
+          <select className= 'filter' name="foodFilter" id="filter">
+            <option value="select"></option>
             <option value="broccoli value">Brocolli score</option>
             <option value="Date">Date</option>
           </select>
