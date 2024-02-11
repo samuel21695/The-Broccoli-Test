@@ -10,16 +10,15 @@ export default function MediaCard() {
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         sx={{ height: 140 }}
-        image="../../images/pizza.jpg"
+        image="/images/pizza.jpg"
         title="green iguana"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
+          Pizza
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, rerum! Maiores aspernatur fuga eveniet explicabo earum sequi deleniti nihil qui odit? Necessitatibus sit ab, animi cupiditate perspiciatis iure optio recusandae.
         </Typography>
       </CardContent>
       <CardActions>
