@@ -20,6 +20,7 @@
 } 
 
 .conditions {
+  margin-top: 1rem;
   background-color: #EFF8EC;
   text-align: left;
   transition: ease-in 0.5s;
@@ -27,13 +28,28 @@
   padding: 10px;
 }
 
+.results{
+  transition: ease-in 0.3s;
+  width: 30vw;
+}
+
 .resultBtn {
+  color: #2f7635;
+  font-weight: bold;
   border: none;
   background-color: #EFF8EC;
 }
 
 .resultBtn:hover {
   cursor: pointer;
+}
+
+.recommend {
+  width: 28vw;
+  height: 100px;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #F5FFF6;
 }
 
 /* 수정된 biteAnimation 클래스들 */

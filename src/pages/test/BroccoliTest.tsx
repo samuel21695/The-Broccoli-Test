@@ -38,11 +38,11 @@ function Test () {
       ></div>
       {/* 먹은 브로콜리 수 */}
       <p>Eaten Broccoli: {eatenBroccoli}</p>
-      <div className='conditions'>
+      <div className='conditions '>
         {/* 결과 표시 상태에 따라 컴포넌트 렌더링 */}
-      <button className = 'resultBtn' onClick={() => setShowResults(!showResults)}>
-        results
-      </button>
+        <button className = 'resultBtn' onClick={() => setShowResults(!showResults)}>
+          results
+        </button>
         {showResults && (
           <>
             {eatenBroccoli === 0 && <ConditionOne/>}
