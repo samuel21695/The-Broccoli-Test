@@ -10,8 +10,12 @@ function Header () {
   return(
     <div className='header'>
       <div className='header-left'>
-        <div>Test One</div>
-        <div>Test Two</div>
+        <Link to = 'test'>
+          <div>Test One</div>
+        </Link>
+        <Link to = 'foodList'>
+          <div>Test Two</div>
+        </Link>
       </div>
       <Link to = '/'>
         <div className='logo'></div>
