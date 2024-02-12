@@ -20,8 +20,20 @@
 } 
 
 .conditions {
-  width: 40vw;
+  background-color: #EFF8EC;
   text-align: left;
+  transition: ease-in 0.5s;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.resultBtn {
+  border: none;
+  background-color: #EFF8EC;
+}
+
+.resultBtn:hover {
+  cursor: pointer;
 }
 
 /* 수정된 biteAnimation 클래스들 */
