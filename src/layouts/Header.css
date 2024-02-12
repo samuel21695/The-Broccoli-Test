@@ -1,6 +1,6 @@
 .header {
-  width: 100vw;
   display: flex;
+  flex: 1 1 1;
   justify-content: space-between;
   align-items: center;
   color: #2f7635;
@@ -14,13 +14,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 140px;
-  height: 50px;
+  width: 120px;
+  height: 40px;
   border: 1px solid #2f7635;
-  margin-top: 3rem;
   margin-left: 5rem;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: bold;
   border-radius: 32px;
   transition:ease 0.5s;
@@ -33,9 +32,16 @@
   cursor: pointer;
 }
 
+.logo {
+  background-image: url(/images/logo_nobg.png);
+  background-size: cover;
+  margin-right: 11rem;
+  width: 150px;
+  height: 150px;
+}
+
 .header-right {
   display: flex;
-  margin-top: 3rem;
   margin-right: 5rem;
   right: 0;
 }
