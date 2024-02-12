@@ -13,7 +13,9 @@ function Header () {
         <div>Test One</div>
         <div>Test Two</div>
       </div>
-      <div className='logo'></div>
+      <Link to = '/'>
+        <div className='logo'></div>
+      </Link>
       <div className='header-right'>
         <div className='language'>
           <Link to ='KR' className='kr'>KR</Link>
