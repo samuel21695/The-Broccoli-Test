@@ -4,6 +4,8 @@
   height: 100vh; /* 전체 화면 높이로 설정 */
   text-align: center;
   background-color: #DCE7D7;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .App-logo {
