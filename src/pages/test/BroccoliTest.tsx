@@ -37,16 +37,16 @@ function Test () {
       {/* 먹은 브로콜리 수 */}
       <p>Eaten Broccoli: {eatenBroccoli}</p>
       <div className='conditions'>
-        {eatenBroccoli === 1 && (
+        {eatenBroccoli === 0 && (
           <ConditionOne/>
         )}
-        {eatenBroccoli === 2 && (
+        {eatenBroccoli === 1 && (
           <ConditionTwo/>
         )}
-        {eatenBroccoli === 3 && (
+        {eatenBroccoli === 2 && (
           <ConditionThree/>
         )}
-        {eatenBroccoli === 4 && (
+        {eatenBroccoli === 3 && (
           <ConditionFour/>
         )}
         {eatenBroccoli > 4 && (
