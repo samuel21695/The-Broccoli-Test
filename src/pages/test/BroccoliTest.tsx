@@ -18,6 +18,8 @@ import './BroccoliTest.css'
 function Test () {
   // 먹은 브로콜리 수와 애니메이션 횟수를 상태로 관리
   const [eatenBroccoli, setEatenBroccoli] = useState(0);
+  // 걀과 표시 상태 추가
+  const [showResults, setShowResults] = useState(false); 
   
   // 브로콜리를 클릭했을 때 실행되는 함수
   const eatBroccoli = () => {
@@ -36,31 +38,29 @@ function Test () {
       ></div>
       {/* 먹은 브로콜리 수 */}
       <p>Eaten Broccoli: {eatenBroccoli}</p>
+      <IconButton onClick={() => setShowResults(!showResults)}>
+        Results
+      </IconButton>
       <div className='conditions'>
-        {eatenBroccoli === 0 && (
-          <ConditionOne/>
-        )}
-        {eatenBroccoli === 1 && (
-          <ConditionTwo/>
-        )}
-        {eatenBroccoli === 2 && (
-          <ConditionThree/>
-        )}
-        {eatenBroccoli === 3 && (
-          <ConditionFour/>
-        )}
-        {eatenBroccoli > 4 && (
-          <ConditionFive/>
+        {/* 결과 표시 상태에 따라 컴포넌트 렌더링 */}
+        {showResults && (
+          <>
+            {eatenBroccoli === 0 && <ConditionOne/>}
+            {eatenBroccoli === 1 && <ConditionTwo/>}
+            {eatenBroccoli === 2 && <ConditionThree/>}
+            {eatenBroccoli === 3 && <ConditionFour/>}
+            {eatenBroccoli > 4 && <ConditionFive/>}
+            <Stack direction="row" spacing={1}>
+              <IconButton>
+                <SaveAltIcon color='success'/>
+              </IconButton>
+              <IconButton>
+                <LinkIcon color='success'/>
+              </IconButton>
+            </Stack>
+          </>
         )}
       </div>
-      <Stack direction="row" spacing={1}>
-        <IconButton>
-          <SaveAltIcon color='success'/>
-        </IconButton>
-        <IconButton>
-          <LinkIcon color='success'/>
-        </IconButton>
-      </Stack>
     </div>
   )
 }
