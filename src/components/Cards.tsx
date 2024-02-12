@@ -72,11 +72,11 @@ export default function MediaCard() {
       <Card sx={{ maxWidth: 345 }}>
         <CardMedia
           sx={{ height: 140 }}
-          title="Pizza"
+          title="hotdog"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            Sushi 🥦🥦
+            Hot dog 🥦🥦
           </Typography>
           <Typography variant="body2" color="text.secondary">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, rerum! Maiores aspernatur fuga eveniet explicabo earum sequi deleniti nihil qui odit? Necessitatibus sit ab, animi cupiditate perspiciatis iure optio recusandae.
@@ -91,11 +91,11 @@ export default function MediaCard() {
       <Card sx={{ maxWidth: 345 }}>
         <CardMedia
           sx={{ height: 140 }}
-          title="Pizza"
+          title="Chocolate"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            Sushi 🥦🥦
+            Chocolate 🥦
           </Typography>
           <Typography variant="body2" color="text.secondary">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, rerum! Maiores aspernatur fuga eveniet explicabo earum sequi deleniti nihil qui odit? Necessitatibus sit ab, animi cupiditate perspiciatis iure optio recusandae.
