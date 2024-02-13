@@ -25,11 +25,18 @@ app.get('/foods', (req, res) => {
   connection.query('SELECT * FROM foods', (err, results)=> {
     if (err) {
       // If there's an error, log it and send an internal server error response
-      console.error('Erro querying MariaDB', err);
+      console.error('Error querying MariaDB', err);
       res.status(500).send('Internal Server Error');
     } else {
       // If successful, send the food data as a JSON response
       res.json(results);
     }
   });
+});
+
+// Define the port number for the server to listen on
+const PORT = process.env.PORT || 3000;
+// Start the server and listen for incoming connections
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
