@@ -18,3 +18,18 @@ connection.connect((err) => {
     console.log('Connected to MariaDB');
   }
 });
+
+// Define a route to handle GET requests to /foods
+app.get('/foods', (req, res) => {
+  // Query the foods table to get all food data
+  connection.query('SELECT * FROM foods', (err, results)=> {
+    if (err) {
+      // If there's an error, log it and send an internal server error response
+      console.error('Erro querying MariaDB', err);
+      res.status(500).send('Internal Server Error');
+    } else {
+      // If successful, send the food data as a JSON response
+      res.json(results);
+    }
+  });
+});
