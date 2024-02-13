@@ -35,7 +35,7 @@ app.get('/foods', (req, res) => {
 });
 
 // Define the port number for the server to listen on
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 // Start the server and listen for incoming connections
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
