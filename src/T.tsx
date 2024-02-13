@@ -66,7 +66,8 @@ function T () {
         type='text'
         placeholder='search'
         value={searchTerm}
-        onChange={handleSearch} 
+        onChange={(e) => setSearchTerm(e.target.value)}
+        onKeyPress={handleKeyPress} 
       />
       {/* Display food list */}
       <div className='food-list'>
