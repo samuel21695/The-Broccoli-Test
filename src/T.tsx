@@ -11,6 +11,8 @@ interface Food {
 function T () {
   // State to store the list of foods fetched from the server
   const [foods, setFoods] = useState<Food[]>([]);
+  // State to store the search term
+  const [searchTerm, setSearchTerm] = useState<string>('');
   // Function to fetch the list of foods from the server
   const fetchFoods = async () => {
     try {
