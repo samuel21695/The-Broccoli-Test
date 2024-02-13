@@ -33,10 +33,21 @@ function T () {
     } catch (error) {
       console.error('Error fetching data:', error); // Log an error message if an error occurs
     }
+  };
+
+  const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchTerm(e.target.value)
   }
 
   return (
     <div>
+      {/* Input for searching foods */}
+      <input
+        type='text'
+        placeholder='search'
+        value={searchTerm}
+        onChange={handleSearch} 
+      />
       <div className='food-list'>
         {foods.map((food) => (
           <li key={food.id}>
