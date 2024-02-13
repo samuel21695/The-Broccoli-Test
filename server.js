@@ -24,17 +24,30 @@ connection.connect((err) => {
 
 // Define a route to handle GET requests to /foods
 app.get('/foods', (req, res) => {
-  // Query the foods table to get all food data
-  connection.query('SELECT * FROM foods', (err, results)=> {
-    if (err) {
-      // If there's an error, log it and send an internal server error response
-      console.error('Error querying MariaDB', err);
-      res.status(500).send('Internal Server Error');
-    } else {
-      // If successful, send the food data as a JSON response
-      res.json(results);
-    }
-  });
+  // If search term is provided in the query, filter foods based on the search term
+  if (req.query.search) {
+    const searchTerm = req.query.search;
+    const searchQuery = `SELECT * FROM foods WHERE name LIKE '%${searchTerm}%'`;
+    connection.query(searchQuery, (err, results) => {
+      if (err) {
+        console.error('Error searching foods', err);
+        res.status(500).send('Internal Server Error');
+      } else {
+        res.json(results);
+      }
+    });
+  } else {
+    // If no search term provided, fetch all foods
+    const query = 'SELECT * FROM foods';
+    connection.query(query, (err, results) => {
+      if (err) {
+        console.error('Error querying MariaDB', err);
+        res.status(500).send('Internal Server Error');
+      } else {
+        res.json(results);
+      }
+    });
+  }
 });
 
 // Define the port number for the server to listen on
