@@ -50,7 +50,14 @@ function T () {
       console.error('Error searching foods:', error);
     }
   };
-  
+
+  const handleKeyPress = (e:React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      // Trigger search when Enter key is pressed
+      handleSearch();
+    }
+  };
+
 
   return (
     <div>
