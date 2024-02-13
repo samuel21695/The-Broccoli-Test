@@ -21,7 +21,7 @@ function T () {
   // Function to fetch the list of foods from the server
   const fetchFoods = async () => {
     try {
-      const response = await fetch('/foods'); // send a request to fetch the list of foods from the server
+      const response = await fetch('http://localhost:3001/foods'); // send a request to fetch the list of foods from the server
       if (!response.ok) {
         throw new Error('Failed to fetch foods'); //Throw an error if the response is not successful
       }
@@ -33,7 +33,15 @@ function T () {
   }
 
   return (
-    <>test</>
+    <div>
+      <div className='food-list'>
+        {foods.map((food) => (
+          <li key={food.id}>
+            <img src={food.image} alt={food.name} />
+          </li>
+        ))}
+      </div>
+    </div>
   )
 }
 
