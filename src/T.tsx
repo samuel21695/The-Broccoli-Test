@@ -13,6 +13,11 @@ function T () {
   const [foods, setFoods] = useState<Food[]>([]);
   // State to store the search term
   const [searchTerm, setSearchTerm] = useState<string>('');
+
+  useEffect(() => {
+    fetchFoods(); // Call the function to fetch the list of foods when the component mpunts
+  }, []);
+
   // Function to fetch the list of foods from the server
   const fetchFoods = async () => {
     try {
