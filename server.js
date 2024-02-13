@@ -9,3 +9,12 @@ const connection = mysql.createConnection({
   password: '1234',
   database: 'broccoli'
 });
+
+// Connect to MariaDB
+connection.connect((err) => {
+  if (err) {
+    console.error('Error connecting to MariaDB:', err);
+  } else {
+    console.log('Connected to MariaDB');
+  }
+});
