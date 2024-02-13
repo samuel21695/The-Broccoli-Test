@@ -37,9 +37,20 @@ function T () {
     }
   };
 
-  const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setSearchTerm(e.target.value)
-  }
+  const handleSearch = async () => {
+    try {
+      // Fetch foods from the server based on the search term
+      const response = await fetch(`http://localhost:3001/foods?search=${searchTerm}`)
+      if(!response.ok) {
+        throw new Error('Failed to search foods');
+      }
+      const data: Food[] = await response.json();
+      setSearchResult(data);
+    } catch (error) {
+      console.error('Error searching foods:', error);
+    }
+  };
+  
 
   return (
     <div>
@@ -66,6 +77,6 @@ function T () {
       </div>
     </div>
   )
-}
+};
 
 export default T
