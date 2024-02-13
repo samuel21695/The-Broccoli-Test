@@ -69,6 +69,8 @@ function T () {
         onChange={(e) => setSearchTerm(e.target.value)}
         onKeyPress={handleKeyPress} 
       />
+      {/* Button for triggering search */}
+      <button onClick={handleSearch}>Search</button>
       {/* Display food list */}
       <div className='food-list'>
         {foods.map((food) => (
