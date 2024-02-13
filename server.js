@@ -23,7 +23,7 @@ connection.connect((err) => {
 });
 
 // Define a route to handle GET requests to /foods
-app.get('http://localhost:3001/foods', (req, res) => {
+app.get('/foods', (req, res) => {
   // Query the foods table to get all food data
   connection.query('SELECT * FROM foods', (err, results)=> {
     if (err) {
