@@ -73,18 +73,7 @@ function T () {
       <button onClick={handleSearch}>Search</button>
       {/* Display food list */}
       <div className='food-list'>
-        {foods.map((food) => (
-          <li key={food.id}>
-            <h3>{food.name}</h3>
-            <p>{food.description}</p>
-            <p>Broccoli Score: {food.broccoliScore}</p>
-            <img src={food.image} alt={food.name} />
-            <p>CALORIES: {food.calories}</p>
-            <p>FAT: {food.fat}G</p>
-            <p>CARBS: {food.carbs}</p>
-          </li>
-        ))}
-        {searchResult.map((food) => (
+        {(searchResult.length > 0 ? searchResult : foods).map((food) => (
           <li key={food.id}>
             <h3>{food.name}</h3>
             <p>{food.description}</p>
