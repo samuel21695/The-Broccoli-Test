@@ -76,24 +76,20 @@ function FoodList () {
         </select>
       </div>
       <div className='listGroup'>
-        <Card sx={{ maxWidth: 345 }}>
-          <CardMedia className='pizza'
-            sx={{ height: 140 }}
-            title="Pizza"
-          />
+        {/* Conditinally render the food list based on whether there are search results */}
+        {(searchResult.length > 0 ? searchResult : foods).map((food) => (
+        <Card sx={{ maxWidth: 345 }} key={food.id}>
+          <img src={food.image} alt={food.name} className='foodImage' width={345} height={200}/>
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              Pizza 🥦🥦🥦
+              {food.name}
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, rerum! Maiores aspernatur fuga eveniet explicabo earum sequi deleniti nihil qui odit? Necessitatibus sit ab, animi cupiditate perspiciatis iure optio recusandae.
+              {food.description}
             </Typography>
           </CardContent>
-          <CardActions>
-            <Button size="small">Share</Button>
-            <Button size="small">Learn More</Button>
-          </CardActions>
         </Card>
+        ))};
       </div>
     </div>
   )
