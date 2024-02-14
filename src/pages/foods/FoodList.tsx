@@ -3,8 +3,13 @@ import fetchFoods from '../../functions/fetchFoods';
 import './FoodList.css'
 
 // MUI components
-import { Box, TextField } from '@mui/material';
-import MediaCard from '../../components/Cards';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+
 
 interface Food {
   id: number;
@@ -53,17 +58,16 @@ function FoodList () {
     <div className='foodLists'>
       <div className='foodSearch'>
         <div className='searchGroup'>
-          <Box
-          component='form'
-          sx={{
-            '& .MuiFormControl-root': { width: '300px' },
-          }}
-          noValidate
-          autoComplete='off'
-          >
-            <TextField id='outlined-basic' label='search' color="success" variant="outlined"></TextField>
-          </Box>
-          <button className='searchButton'>test</button>
+          {/* Input for searching foods */}
+          <input
+            type='text'
+            placeholder='search'
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            onKeyPress={handleKeyPress} 
+          />
+          {/* Button for triggering search */}
+          <button onClick={handleSearch}>Search</button>
         </div>
         <select className= 'filter' name="foodFilter" id="filter">
           <option value="select"></option>
@@ -72,7 +76,24 @@ function FoodList () {
         </select>
       </div>
       <div className='listGroup'>
-        <MediaCard></MediaCard>
+        <Card sx={{ maxWidth: 345 }}>
+          <CardMedia className='pizza'
+            sx={{ height: 140 }}
+            title="Pizza"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              Pizza 🥦🥦🥦
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, rerum! Maiores aspernatur fuga eveniet explicabo earum sequi deleniti nihil qui odit? Necessitatibus sit ab, animi cupiditate perspiciatis iure optio recusandae.
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <Button size="small">Share</Button>
+            <Button size="small">Learn More</Button>
+          </CardActions>
+        </Card>
       </div>
     </div>
   )
