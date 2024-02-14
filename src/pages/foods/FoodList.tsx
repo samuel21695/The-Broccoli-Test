@@ -54,8 +54,9 @@ function FoodList () {
         handleSearch();
       }
     };
+
   return (
-    <div className='foodLists'>
+    <div className='foods'>
       <div className='foodSearch'>
         <div className='searchGroup'>
           {/* Input for searching foods */}
@@ -69,7 +70,7 @@ function FoodList () {
           {/* Button for triggering search */}
           <button onClick={handleSearch}>Search</button>
         </div>
-        <select className= 'filter' name="foodFilter" id="filter">
+        <select title='food' className= 'filter' name="foodFilter" id="filter">
           <option value="select"></option>
           <option value="broccoli value">Brocolli score</option>
           <option value="Date">Date</option>
@@ -78,18 +79,16 @@ function FoodList () {
       <div className='listGroup'>
         {/* Conditinally render the food list based on whether there are search results */}
         {(searchResult.length > 0 ? searchResult : foods).map((food) => (
-        <Card sx={{ maxWidth: 345 }} key={food.id}>
-          <img src={food.image} alt={food.name} className='foodImage' width={345} height={200}/>
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              {food.name}
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              {food.description}
-            </Typography>
-          </CardContent>
-        </Card>
-        ))};
+          <li key={food.id} className='foodList'>
+            <img src={food.image} alt={food.name} className='foodImg'/>
+            <h3>{food.name}</h3>
+            <p>{food.description}</p>
+            <p>Broccoli Score: {food.broccoliScore}</p>
+            <p>CALORIES: {food.calories}</p>
+            <p>FAT: {food.fat}G</p>
+            <p>CARBS: {food.carbs}</p>
+          </li>
+        ))}
       </div>
     </div>
   )
