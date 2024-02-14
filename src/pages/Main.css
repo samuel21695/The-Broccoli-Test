@@ -1,4 +1,6 @@
 #main {
+  width:100vw;
+  height:85vh;
   display: grid;
   align-items: center;
   background-color: #DCE7D7;

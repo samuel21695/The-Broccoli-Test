@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
 import './Main.css';
-import Header from '../layouts/Header';
+
+import Test from './test/BroccoliTest';
+import FoodList from './foods/FoodList';
 
 function Main() {
   return (
@@ -16,6 +18,8 @@ function Main() {
           <p>Ask yourself “would I eat raw broccoli right now?”</p>
         </div>
       </div>
+      <Test></Test>
+      <FoodList></FoodList>
     </>
   );
 }
