@@ -82,11 +82,14 @@ function FoodList () {
           <li key={food.id} className='foodList'>
             <img src={food.image} alt={food.name} className='foodImg'/>
             <h3>{food.name}</h3>
+            <p>{food.broccoliScore}</p>
             <p>{food.description}</p>
-            <p>Broccoli Score: {food.broccoliScore}</p>
-            <p>CALORIES: {food.calories}</p>
-            <p>FAT: {food.fat}G</p>
-            <p>CARBS: {food.carbs}</p>
+            <hr></hr>
+            <div className='nutrition'>
+              <p>CALORIES: {food.calories}</p>
+              <p>FAT: {food.fat}G</p>
+              <p>CARBS: {food.carbs}</p>
+            </div>
           </li>
         ))}
       </div>

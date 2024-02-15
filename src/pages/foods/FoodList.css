@@ -1,4 +1,6 @@
 .foods{
+  widows: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,4 +59,19 @@
 .foodImg{
   width: 320px;
   height: 180px;
+}
+
+.nutrition {
+  display: flex;
+  width: 320px;
+  height: 120px;
+  background-color: #F2FFEC;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 320px;
+  height: 2px;
+  background-color: #2f7635;
 }
