@@ -98,11 +98,14 @@ function FoodList () {
           {/* Button for triggering search */}
           <button onClick={handleSearch} className='searchBtn'>Search</button>
         </div>
-        <select title='food' className= 'filter' name="foodFilter" id="filter">
-          <option value="select"></option>
-          <option value="broccoli value">Brocolli score</option>
-          <option value="Date">Date</option>
-        </select>
+        {/* Sorting select */}
+        <div className='sortSelect'>
+          <select value={sortOption} onChange={handleSortChange} title='food' className= 'filter'>
+            <option value=''>Sort by...</option>
+            <option value="broccoliScore">Brocolli score</option>
+            <option value="name">A to Z</option>
+          </select>
+        </div>
       </div>
       <div className='listGroup'>
         {/* Conditinally render the food list based on whether there are search results */}
