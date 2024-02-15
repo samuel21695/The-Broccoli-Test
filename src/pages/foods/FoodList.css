@@ -82,7 +82,8 @@ hr {
   background-color: #6f7f74;
 }
 
-/* ---------------------- HOVER EFFECTS STYLE ---------------------- */
+/* Hover effect */
+
 .foodList {
   width: 360px;
   height: 480px;
@@ -92,8 +93,6 @@ hr {
   position: relative;
   overflow: hidden;
 }
-
-
 
 .foodList .line {    
   background-color: #6f7f74;
