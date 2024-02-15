@@ -8,10 +8,19 @@
   align-items: center;
 }
 
+.broccoliContents{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #2f7635;
+}
+
 .target {
   width: 150px;
   height: 150px;
   /* background-color: brown; */
+  margin: 1rem;
   background-image: url(/images/broccoli.png);
   background-size: cover;
   cursor: pointer;
@@ -24,7 +33,7 @@
 
 .conditions {
   margin-top: 1rem;
-  background-color: #EFF8EC;
+  background-color: #FDFFFC;
   text-align: left;
   transition: ease-in 0.5s;
   border-radius: 20px;
@@ -40,7 +49,8 @@
   color: #2f7635;
   font-weight: bold;
   border: none;
-  background-color: #EFF8EC;
+  background-color: #FDFFFC;
+  
 }
 
 .resultBtn:hover {

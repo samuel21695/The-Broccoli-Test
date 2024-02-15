@@ -66,9 +66,10 @@ function FoodList () {
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             onKeyPress={handleKeyPress} 
+            className='searchInput'
           />
           {/* Button for triggering search */}
-          <button onClick={handleSearch}>Search</button>
+          <button onClick={handleSearch} className='searchBtn'>Search</button>
         </div>
         <select title='food' className= 'filter' name="foodFilter" id="filter">
           <option value="select"></option>
@@ -82,7 +83,7 @@ function FoodList () {
           <li key={food.id} className='foodList'>
             <img src={food.image} alt={food.name} className='foodImg'/>
             <h3>{food.name}</h3>
-            <p>{food.broccoliScore}</p>
+            <p>Broccoli score: {food.broccoliScore}</p>
             <p>{food.description}</p>
             <hr></hr>
             <div className='nutrition'>

@@ -31,17 +31,19 @@ function Test () {
 
   return (
     <div className='test-container'>
-      <h1>Feeling hungry?🤔</h1>
-      <div 
-        className={`target animation-${eatenBroccoli+ 1}`}
-        onClick={eatBroccoli} // 클릭 시 먹은 브로콜리 수를 증가시키고 애니매이션 횟수 증가
-      ></div>
-      {/* 먹은 브로콜리 수 */}
-      <p>Eaten Broccoli: {eatenBroccoli}</p>
+      <div className='broccoliContents'>
+        <h1>Feeling hungry?🤔</h1>
+        <div 
+          className={`target animation-${eatenBroccoli+ 1}`}
+          onClick={eatBroccoli} // 클릭 시 먹은 브로콜리 수를 증가시키고 애니매이션 횟수 증가
+        ></div>
+        {/* 먹은 브로콜리 수 */}
+        <p>Eaten Broccoli: {eatenBroccoli}</p>        
+      </div>
       <div className='conditions '>
         {/* 결과 표시 상태에 따라 컴포넌트 렌더링 */}
         <button className = 'resultBtn' onClick={() => setShowResults(!showResults)}>
-          results
+          Nope!
         </button>
         {showResults && (
           <>
