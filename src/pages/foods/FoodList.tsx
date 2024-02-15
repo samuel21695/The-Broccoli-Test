@@ -29,7 +29,9 @@ function FoodList () {
     const [searchTerm, setSearchTerm] = useState<string>('');
     // State to store the search result
     const [searchResult, setSearchResult] = useState<Food[]>([]);
-  
+    // State to store the sort options
+    const [sortOption, setSortOption] = useState<string>('');
+    
     useEffect(() => {
       fetchFoods().then((data) => setFoods(data)); // Call the function to fetch the list of foods when the component mpunts
     }, [searchTerm]);
