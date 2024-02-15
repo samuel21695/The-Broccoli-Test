@@ -9,7 +9,7 @@ function Main() {
     <>
       <div id='main'>
         <div className='main-contents'>
-          <h1>Am I really hungry?</h1>
+          <h1>Feeling hungry?</h1>
           <Link to="/test">
             <div className='broccoli'></div>
           </Link>

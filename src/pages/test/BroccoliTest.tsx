@@ -27,24 +27,37 @@ function Test () {
     if( eatenBroccoli < 5) {
       setEatenBroccoli(eatenBroccoli + 1); // 먹은 브로콜리 수 증가
     }
+
   }
+
+  const handleAnimationEnd = () => {
+      // 애니메이션이 끝나면 다시 클래스를 초기화
+      const targetElement = document.querySelector('.target');
+      if (targetElement) {
+          targetElement.classList.remove(`animation-${eatenBroccoli}`);
+      }
+    };
 
   return (
     <div className='test-container'>
       <div className='broccoliContents'>
-        <h1>Feeling hungry?🤔</h1>
+        {/* <h2>Would you eat raw broccoli?🤔</h2> */}
+        <div className='broccoliStatus'>
+          <p>🥦 X  {eatenBroccoli}</p>
+          <button>🔄️</button>        
+        </div>
         <div 
           className={`target animation-${eatenBroccoli+ 1}`}
           onClick={eatBroccoli} // 클릭 시 먹은 브로콜리 수를 증가시키고 애니매이션 횟수 증가
+          onAnimationEnd={handleAnimationEnd}
         ></div>
         {/* 먹은 브로콜리 수 */}
-        <p>Eaten Broccoli: {eatenBroccoli}</p>        
       </div>
-      <div className='conditions '>
         {/* 결과 표시 상태에 따라 컴포넌트 렌더링 */}
         <button className = 'resultBtn' onClick={() => setShowResults(!showResults)}>
           Nope!
         </button>
+      <div className='conditions '>
         {showResults && (
           <>
             {eatenBroccoli === 0 && <ConditionOne/>}

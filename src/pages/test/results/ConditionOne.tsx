@@ -7,9 +7,9 @@ function ConditionOne() {
       <br></br>
       You might be lonely, thirsty, or just looking for a distraction. Use this opportunity to face your issues and figure out what you really need. 
       </p>
-      <h2>Recommended foods</h2>
+      <h2>Recommended</h2>
       <div className = "recommend foods-1">
-        <div>🍎 🍌 🍑 🍒 🍓 🥬 🥦</div>
+        <div>🫗 🍎 🍌 🍑 🍒 🍓 🥬 🥦</div>
       </div>
     </div>
   );
