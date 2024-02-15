@@ -62,7 +62,14 @@ function FoodList () {
     const selectedOption = e.target.value;
     setSortOption(selectedOption);
 
-    }
+  };
+  
+
+  // Funtion to sort foods by Broccoli Score
+  const sortBybroccoliScore = () => {
+    
+    const sortedFoods = [...foods].sort((a, b) => a.broccoliScore - b.broccoliScore);
+    setSearchResult(sortedFoods);
   }
 
   return (
