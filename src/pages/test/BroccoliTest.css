@@ -85,11 +85,10 @@
 
 /* 수정된 biteAnimation 클래스들 */
 
-.animation-2 {
-  animation: biteAnimation 2s;
-}
-
-.animation-3 {
+.animation-2,
+.animation-3,
+.animation-4,
+.animation-5 {
   animation: biteAnimation 2s;
 }
 
