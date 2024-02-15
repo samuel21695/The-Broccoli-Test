@@ -42,7 +42,11 @@
 
 .results{
   transition: ease-in 0.3s;
-  width: 30vw;
+  width: 40vw;
+}
+
+.results > h2{
+  margin-top: 1rem;
 }
 
 .resultBtn {
@@ -61,8 +65,12 @@
   width: 28vw;
   height: 100px;
   border-radius: 20px;
-  padding: 10px;
+  padding: 20px;
   background-color: #F5FFF6;
+}
+
+.status{
+  margin-top: 1rem;
 }
 
 /* 수정된 biteAnimation 클래스들 */
