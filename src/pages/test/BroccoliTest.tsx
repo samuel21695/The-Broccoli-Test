@@ -20,12 +20,15 @@ function Test () {
   const [eatenBroccoli, setEatenBroccoli] = useState(0);
   // 걀과 표시 상태 추가
   const [showResults, setShowResults] = useState(false); 
+  const [animationKey, setAnimationKey] = useState('');
+
   
   // 브로콜리를 클릭했을 때 실행되는 함수
   const eatBroccoli = () => {
     // 애니메이션 횟수가 5 미만일 때 애니메이션 실행
     if( eatenBroccoli < 5) {
       setEatenBroccoli(eatenBroccoli + 1); // 먹은 브로콜리 수 증가
+      setAnimationKey(Math.random().toString(36)); // 애니메이션 키 업데이트
     }
 
   }
@@ -47,6 +50,7 @@ function Test () {
           <button>🔄️</button>        
         </div>
         <div 
+          key={animationKey}
           className={`target animation-${eatenBroccoli+ 1}`}
           onClick={eatBroccoli} // 클릭 시 먹은 브로콜리 수를 증가시키고 애니매이션 횟수 증가
           onAnimationEnd={handleAnimationEnd}
