@@ -59,14 +59,6 @@
   row-gap: 1rem;
   flex-wrap: wrap;
 }
-.foodList {
-  width: 360px;
-  height: 560px;
-  padding: 15px 20px;
-  background-color: #ffffff;
-  list-style: none;
-  box-shadow: 4px 5px 6px 0 rgba(1, 1, 1, .07);
-}
 
 .foodImg{
   width: 320px;
@@ -87,5 +79,96 @@ hr {
   margin-bottom: 1rem;
   width: 320px;
   height: 2px;
-  background-color: #2f7635;
+  background-color: #6f7f74;
+}
+
+/* ---------------------- HOVER EFFECTS STYLE ---------------------- */
+.foodList {
+  width: 360px;
+  height: 480px;
+  padding: 15px 20px; 
+  background-color: #f5fff5;
+  list-style: none;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+.foodList .line {    
+  background-color: #6f7f74;
+  position: absolute;
+}
+
+.foodList .line span {
+  background-color: #DCE7D7;
+  position: inherit;
+  display: block;
+  transition: all .4s ease-out;
+}
+
+.foodList .line-top {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2.5px;
+}
+
+.foodList .line-right {
+  top: 0;
+  right: 0;
+  width: 2.5px;
+  height: 100%;
+}
+
+.foodList .line-bottom {
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2.5px;
+}
+
+.foodList .line-left {
+  left: 0;
+  bottom: 0;
+  width: 2.5px;
+  height: 100%;
+}
+
+.foodList .line-top span {
+  top: inherit;
+  left: inherit;
+  width: 0;
+  height: 100%;
+}
+
+.foodList .line-right span {
+  top: inherit;
+  right: inherit;
+  width: 100%;
+  height: 0;
+}
+
+.foodList .line-bottom span {
+  right: inherit;
+  bottom: inherit;
+  width: 0;
+  height: 100%;
+}
+
+.foodList .line-left span {
+  left: inherit;
+  bottom: inherit;
+  width: 100%;
+  height: 0;
+}
+
+.foodList:hover .line-top span,
+.foodList:hover .line-bottom span {
+  width: 100%;
+}
+
+.foodList:hover .line-left span,
+.foodList:hover .line-right span {
+  height: 100%;
 }

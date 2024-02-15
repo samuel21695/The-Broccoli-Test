@@ -83,6 +83,18 @@ function FoodList () {
         {/* Conditinally render the food list based on whether there are search results */}
         {(searchResult.length > 0 ? searchResult : foods).map((food) => (
           <li key={food.id} className='foodList'>
+            <div className="line line-top">
+              <span></span>
+            </div>
+            <div className="line line-right">
+              <span></span>
+            </div>
+            <div className="line line-bottom">
+              <span></span>
+            </div>
+            <div className="line line-left">
+              <span></span>
+            </div>
             <img src={food.image} alt={food.name} className='foodImg'/>
             <h3>{food.name}</h3>
             <p>Broccoli score: {food.broccoliScore}</p>
