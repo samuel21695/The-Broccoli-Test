@@ -129,9 +129,18 @@ function FoodList () {
             <p>{food.description}</p>
             <hr></hr>
             <div className='nutrition'>
-              <p>CALORIES: {food.calories}</p>
-              <p>FAT: {food.fat}G</p>
-              <p>CARBS: {food.carbs}</p>
+              <div>
+                <p>CALORIES</p>
+                <p>{food.calories}</p>
+              </div>
+              <div>
+                <p>FAT</p>
+                <p>{food.fat}G</p>
+              </div>
+              <div>
+                <p>CARBS</p>
+                <p>{food.carbs}</p>
+              </div>
             </div>
           </li>
         ))}

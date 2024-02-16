@@ -57,7 +57,7 @@ function Test () {
   return (
     <div className='test-container'>
       <div className='broccoliContents'>
-        {/* <h2>Would you eat raw broccoli?🤔</h2> */}
+        <h1>Would you eat...?🤔</h1>
         <div className='broccoliStatus'>
           <p>🥦 X  {eatenBroccoli}</p>
           <button onClick={handleReset}>🔄️</button>        

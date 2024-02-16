@@ -68,7 +68,6 @@
 .nutrition {
   display: flex;
   justify-content:space-around;
-
   width: 320px;
   height: 120px;
   background-color: #F2FFEC;
