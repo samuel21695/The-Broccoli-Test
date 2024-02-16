@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/samuel21695/The-Broccoli-Test/settings/pages/static/css/main.4f66cfff.css",
-    "main.js": "/samuel21695/The-Broccoli-Test/settings/pages/static/js/main.ba47a152.js",
-    "static/media/logo_nobg.png": "/samuel21695/The-Broccoli-Test/settings/pages/static/media/logo_nobg.9084c086a263517a1356.png",
-    "static/media/broccoli.png": "/samuel21695/The-Broccoli-Test/settings/pages/static/media/broccoli.4bce477dca3c7759d969.png",
-    "static/media/broccoli2.png": "/samuel21695/The-Broccoli-Test/settings/pages/static/media/broccoli2.b61d2f9ae5e0a104524e.png",
-    "index.html": "/samuel21695/The-Broccoli-Test/settings/pages/index.html",
-    "main.4f66cfff.css.map": "/samuel21695/The-Broccoli-Test/settings/pages/static/css/main.4f66cfff.css.map",
-    "main.ba47a152.js.map": "/samuel21695/The-Broccoli-Test/settings/pages/static/js/main.ba47a152.js.map"
+    "main.css": "/samuel21695/The-Broccoli-Test/static/css/main.a83d6bd4.css",
+    "main.js": "/samuel21695/The-Broccoli-Test/static/js/main.ba47a152.js",
+    "static/media/logo_nobg.png": "/samuel21695/The-Broccoli-Test/static/media/logo_nobg.9084c086a263517a1356.png",
+    "static/media/broccoli.png": "/samuel21695/The-Broccoli-Test/static/media/broccoli.4bce477dca3c7759d969.png",
+    "static/media/broccoli2.png": "/samuel21695/The-Broccoli-Test/static/media/broccoli2.b61d2f9ae5e0a104524e.png",
+    "index.html": "/samuel21695/The-Broccoli-Test/index.html",
+    "main.a83d6bd4.css.map": "/samuel21695/The-Broccoli-Test/static/css/main.a83d6bd4.css.map",
+    "main.ba47a152.js.map": "/samuel21695/The-Broccoli-Test/static/js/main.ba47a152.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f66cfff.css",
+    "static/css/main.a83d6bd4.css",
     "static/js/main.ba47a152.js"
   ]
 }
