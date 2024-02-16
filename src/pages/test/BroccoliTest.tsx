@@ -53,14 +53,14 @@ function Test () {
     localStorage.removeItem('eatenBroccoli');
     setEatenBroccoli(0);
   };
-  
+
   return (
     <div className='test-container'>
       <div className='broccoliContents'>
         {/* <h2>Would you eat raw broccoli?🤔</h2> */}
         <div className='broccoliStatus'>
           <p>🥦 X  {eatenBroccoli}</p>
-          <button>🔄️</button>        
+          <button onClick={handleReset}>🔄️</button>        
         </div>
         <div 
           key={animationKey}
