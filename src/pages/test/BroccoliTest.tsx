@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import ConditionOne from './results/ConditionOne';
 import ConditionTwo from './results/ConditionTwo';
@@ -22,6 +22,14 @@ function Test () {
   const [showResults, setShowResults] = useState(false); 
   const [animationKey, setAnimationKey] = useState('');
 
+  useEffect(() => {
+    // 페이지 로드 시 localStorage에서 eatenBroccoli 값을 가져와 상태로 설정합니다.
+    const savedEatenBroccoli = localStorage.getItem('eatenBroccoli');
+    if (savedEatenBroccoli !== null) {
+      setEatenBroccoli(parseInt(savedEatenBroccoli));
+    }
+  }, []);
+
   
   // 브로콜리를 클릭했을 때 실행되는 함수
   const eatBroccoli = () => {
@@ -30,9 +38,8 @@ function Test () {
       setEatenBroccoli(eatenBroccoli + 1); // 먹은 브로콜리 수 증가
       setAnimationKey(Math.random().toString(36)); // 애니메이션 키 업데이트
     }
-
   }
-
+  
   const handleAnimationEnd = () => {
       // 애니메이션이 끝나면 다시 클래스를 초기화
       const targetElement = document.querySelector('.target');
