@@ -41,13 +41,19 @@ function Test () {
   }
   
   const handleAnimationEnd = () => {
-      // 애니메이션이 끝나면 다시 클래스를 초기화
-      const targetElement = document.querySelector('.target');
-      if (targetElement) {
-          targetElement.classList.remove(`animation-${eatenBroccoli}`);
-      }
-    };
-
+    // 애니메이션이 끝나면 다시 클래스를 초기화
+    const targetElement = document.querySelector('.target');
+    if (targetElement) {
+        targetElement.classList.remove(`animation-${eatenBroccoli}`);
+    }
+  };
+    
+  const handleReset = () => {
+    // localStorage에서 eatenBroccoli 값을 제거하고 eatenBroccoli 상태를 초기화합니다.
+    localStorage.removeItem('eatenBroccoli');
+    setEatenBroccoli(0);
+  };
+  
   return (
     <div className='test-container'>
       <div className='broccoliContents'>
