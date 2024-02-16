@@ -33,7 +33,7 @@
   height: 200px;
   /* background-color: brown; */
   margin: 1rem;
-  background-image: url(/images/broccoli.png);
+  background-image: url(../../images/broccoli.png);
   background-size: cover;
   cursor: pointer;
   transition: ease-in 0.5s;

@@ -24,7 +24,7 @@
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background-image: url('../../images/broccoli2.png');
+  background-image: url('../images/broccoli2.png');
   margin: 1rem;
   background-size: cover;
   animation: Img-spin infinite 30s linear;
