@@ -1,0 +1,73 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-thebroccolitest-dev-173009-authRole",
+      "UnauthRoleArn": "arn:aws:iam::611605390242:role/amplify-thebroccolitest-dev-173009-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::611605390242:role/amplify-thebroccolitest-dev-173009-authRole",
+      "Region": "ap-northeast-2",
+      "DeploymentBucketName": "amplify-thebroccolitest-dev-173009-deployment",
+      "UnauthRoleName": "amplify-thebroccolitest-dev-173009-unauthRole",
+      "StackName": "amplify-thebroccolitest-dev-173009",
+      "StackId": "arn:aws:cloudformation:ap-northeast-2:611605390242:stack/amplify-thebroccolitest-dev-173009/99984f30-cca5-11ee-8f32-0a273edcfc18",
+      "AmplifyAppId": "d347fioayit2rd"
+    }
+  },
+  "auth": {
+    "thebroccolitest636e3952": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-thebroccolitest-dev-173009-deployment/amplify-cfn-templates/auth/thebroccolitest636e3952-cloudformation-template.json",
+        "logicalId": "auththebroccolitest636e3952"
+      },
+      "lastPushTimeStamp": "2024-02-16T08:40:00.112Z",
+      "output": {
+        "UserPoolId": "ap-northeast-2_lMCCBzDRs",
+        "AppClientIDWeb": "4bgbofjrs24vs84ejvs93a66ip",
+        "AppClientID": "2c6bc4p9k7msb9eib5j3k7kegh",
+        "IdentityPoolId": "ap-northeast-2:a487c1a1-a1af-4e21-929b-75966f089e7c",
+        "UserPoolArn": "arn:aws:cognito-idp:ap-northeast-2:611605390242:userpool/ap-northeast-2_lMCCBzDRs",
+        "IdentityPoolName": "thebroccolitest636e3952_identitypool_636e3952__dev",
+        "UserPoolName": "thebroccolitest636e3952_userpool_636e3952"
+      },
+      "lastPushDirHash": "dFyvDIE+4+zjJMzBTlHl3QTzcz0="
+    }
+  },
+  "storage": {
+    "s34fe9f29c": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "lastPushTimeStamp": "2024-02-16T08:40:00.112Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-thebroccolitest-dev-173009-deployment/amplify-cfn-templates/storage/cloudformation-template.json",
+        "logicalId": "storages34fe9f29c"
+      },
+      "output": {
+        "BucketName": "thebroccolitest3782b1fe8fb1499e8050401030e7db04173009-dev",
+        "Region": "ap-northeast-2"
+      },
+      "lastPushDirHash": "UBNtuian3eejjtqM4gKajrjbf/g="
+    }
+  }
+}
