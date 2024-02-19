@@ -1,0 +1,14 @@
+{
+  "resourceName": "s34fe9f29c",
+  "policyUUID": "4fe9f29c",
+  "bucketName": "thebroccolitest3782b1fe8fb1499e8050401030e7db04",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

@@ -17,8 +17,10 @@
   color: #2f7635;
 }
 
-.broccoliContents > h2{
+.broccoliContents > h1{
+  width: 25vw;
   text-align: left;
+  margin-bottom: 1rem;
 }
 
 .broccoliStatus{
@@ -60,11 +62,13 @@
 }
 
 .resultBtn {
+  width: 80px;
+  height: 40px;
   color: #2f7635;
   font-weight: bold;
   border: none;
   background-color: #FDFFFC;
-  
+  border-radius: 20px;
 }
 
 .resultBtn:hover {

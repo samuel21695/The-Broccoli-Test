@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-thebroccolitest-dev-173009-authRole",
+      "UnauthRoleArn": "arn:aws:iam::611605390242:role/amplify-thebroccolitest-dev-173009-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::611605390242:role/amplify-thebroccolitest-dev-173009-authRole",
+      "Region": "ap-northeast-2",
+      "DeploymentBucketName": "amplify-thebroccolitest-dev-173009-deployment",
+      "UnauthRoleName": "amplify-thebroccolitest-dev-173009-unauthRole",
+      "StackName": "amplify-thebroccolitest-dev-173009",
+      "StackId": "arn:aws:cloudformation:ap-northeast-2:611605390242:stack/amplify-thebroccolitest-dev-173009/99984f30-cca5-11ee-8f32-0a273edcfc18",
+      "AmplifyAppId": "d347fioayit2rd"
+    },
+    "categories": {
+      "auth": {
+        "thebroccolitest636e3952": {}
+      },
+      "storage": {
+        "s34fe9f29c": {}
+      }
+    }
+  }
+}
