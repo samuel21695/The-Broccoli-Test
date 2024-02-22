@@ -8,7 +8,7 @@ import PersonIcon from '@mui/icons-material/Person';
 
 function Header () {
   return(
-    <div className='header'>
+    <div id='header'>
       <div className='header-left'>
         <Link to = 'test'>
           <div>Test One</div>
