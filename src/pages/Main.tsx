@@ -1,4 +1,5 @@
-import React, { Link } from 'react-router-dom'
+import { Link } from 'react-scroll';
+
 import './Main.css';
 
 import Test from './test/BroccoliTest';
@@ -10,7 +11,11 @@ function Main() {
       <div id='main'>
         <div className='main-contents'>
           <h1>Feeling hungry?</h1>
-          <Link to="/test">
+          <Link 
+          to="test-container"
+          smooth={true}
+          duration={500}
+          >
             <div className='broccoli'></div>
           </Link>
           <br></br>
