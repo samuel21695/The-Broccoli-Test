@@ -14,8 +14,10 @@ function Main() {
             <div className='broccoli'></div>
           </Link>
           <br></br>
-          <p>Feel free to test that you are really hungry or just bored with the broccoli test.</p>
-          <p>Ask yourself “would I eat raw broccoli right now?”</p>
+          <p className='protest-riot'>Feel free to test that you are really hungry or just bored with the broccoli test.<br></br>
+          <br></br>
+          Ask yourself “would I eat raw broccoli right now?”
+          </p>
         </div>
       </div>
       <Test></Test>

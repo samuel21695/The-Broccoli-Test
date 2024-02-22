@@ -15,12 +15,15 @@
   justify-content: center;
   align-items: center;
   color: #2f7635;
+  font-family: "Protest Riot", sans-serif;
 }
 
-.broccoliContents > h1{
+.broccoliContents > h2{
   width: 25vw;
   text-align: left;
   margin-bottom: 1rem;
+  
+
 }
 
 .broccoliStatus{
@@ -55,9 +58,10 @@
 .results{
   transition: ease-in 0.3s;
   width: 25vw;
+  font-family: "Protest Riot", sans-serif
 }
 
-.results > h3{
+.results > h2{
   margin-top: 1rem;
 }
 
@@ -69,6 +73,8 @@
   border: none;
   background-color: #FDFFFC;
   border-radius: 20px;
+  font-family: "Protest Riot", sans-serif
+
 }
 
 .resultBtn:hover {

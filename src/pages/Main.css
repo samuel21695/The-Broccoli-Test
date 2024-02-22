@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+
+
 #main {
   width:100vw;
   height:85vh;
@@ -19,6 +22,9 @@
   font-family:'Times New Roman', Times, serif;
 }
 
+.protest-riot {
+  font-family: "Protest Riot", sans-serif;
+}
 
 .broccoli{
   width: 200px;
