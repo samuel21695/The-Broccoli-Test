@@ -20,8 +20,6 @@ function Main() {
           </p>
         </div>
       </div>
-      <Test></Test>
-      <FoodList></FoodList>
     </>
   );
 }
