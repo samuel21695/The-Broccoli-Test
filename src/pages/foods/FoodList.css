@@ -84,8 +84,8 @@ hr {
 /* Hover effect */
 
 .foodList {
-  width: 20vw;
-  height: 45vh;
+  width: 340px;
+  height: 420px;
   padding: 15px 20px; 
   background-color: #f5fff5;
   list-style: none;
