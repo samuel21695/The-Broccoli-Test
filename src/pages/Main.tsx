@@ -1,7 +1,7 @@
 import React, { Link } from 'react-router-dom'  
 import './Main.css';
 
-import Test from './test/BroccoliTest';
+import TestTwo from '../scrolls/BroccoliTestTwo';
 import FoodList from './foods/FoodList';
 
 function Main() {
@@ -20,6 +20,8 @@ function Main() {
           </p>
         </div>
       </div>
+      <TestTwo></TestTwo>
+      <FoodList></FoodList>
     </>
   );
 }

@@ -45,6 +45,16 @@
   transition: 0.5s ease-in-out;
 }
 
+#test-container-two{
+  width: 100vw;
+  height: 100vh;
+  background-color: #EFF8EC;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 @keyframes Img-spin {
   from {
     transform: rotate(0deg);
