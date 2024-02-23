@@ -33,6 +33,16 @@
   justify-content: space-between;
 }
 
+.broccoliStatus > button {
+  font-size: 16px;
+  border:none;
+  background-color: inherit;
+}
+
+.broccoliStatus > button:hover {
+  cursor: pointer;
+}
+
 .target {
   width: 200px;
   height: 200px;
