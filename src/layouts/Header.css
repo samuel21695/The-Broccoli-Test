@@ -16,7 +16,7 @@
   align-items: center;
   justify-content: center;
   color:#2f7635;
-  width: 120px;
+  width: 100px;
   height: 40px;
   border: 1px solid #2f7635;
   margin-left: 5rem;
@@ -38,7 +38,7 @@
 .logo {
   background-image: url(/images/logo_nobg.png);
   background-size: cover;
-  margin-right: 11rem;
+  margin-right: 8rem;
   width: 150px;
   height: 150px;
 }
