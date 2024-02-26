@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 
-import ConditionOne from './results/ConditionOne';
-import ConditionTwo from './results/ConditionTwo';
-import ConditionThree from './results/ConditionThree';
-import ConditionFour from './results/ConditionFour';
-import ConditionFive from './results/ConditionFive';
+
+import ConditionOne from '../pages/test/results/ConditionOne';
+import ConditionTwo from '../pages/test/results/ConditionTwo';
+import ConditionThree from '../pages/test/results/ConditionThree';
+import ConditionFour from '../pages/test/results/ConditionFour';
+import ConditionFive from '../pages/test/results/ConditionFive';
 
 // Material UI
 import Stack from '@mui/material/Stack';
@@ -12,9 +13,7 @@ import IconButton from '@mui/material/IconButton';
 import SaveAltIcon from '@mui/icons-material/SaveAlt';
 import LinkIcon from '@mui/icons-material/Link';
 
-import './BroccoliTest.css'
-
-function Test () {
+function TestTwo () {
   // 먹은 브로콜리 수와 애니메이션 횟수를 상태로 관리
   const [eatenBroccoli, setEatenBroccoli] = useState(0);
   // 걀과 표시 상태 추가
@@ -54,7 +53,7 @@ function Test () {
   };
 
   return (
-    <div id='test-container'>
+    <div id='test-container-two'>
       <div className='broccoliContents'>
         <h1>Would you eat...?🤔</h1>
         <div className='broccoliStatus'>
@@ -96,4 +95,4 @@ function Test () {
   )
 }
 
-export default Test;
+export default TestTwo;

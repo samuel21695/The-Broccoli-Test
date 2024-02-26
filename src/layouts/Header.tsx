@@ -2,19 +2,18 @@ import './Header.css'
 
 import { Link } from 'react-router-dom'
 
-import Stack from '@mui/material/Stack';
 import IconButton from '@mui/material/IconButton';
 import PersonIcon from '@mui/icons-material/Person';
 
 function Header () {
   return(
-    <div className='header'>
+    <div id='header'>
       <div className='header-left'>
         <Link to = 'test'>
-          <div>Test One</div>
+          <div>Test</div>
         </Link>
         <Link to = 'foodList'>
-          <div>Test Two</div>
+          <div>Foods</div>
         </Link>
       </div>
       <Link to = '/'>

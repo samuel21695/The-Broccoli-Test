@@ -1,7 +1,7 @@
-.test-container{
+#test-container{
   width: 100vw;
-  height: 100vh;
-  background-color: #EFF8EC;
+  height: 85vh;
+  background-color: #DCE7D7;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,12 +15,15 @@
   justify-content: center;
   align-items: center;
   color: #2f7635;
+  font-family: "Protest Riot", sans-serif;
 }
 
-.broccoliContents > h1{
+.broccoliContents > h2{
   width: 25vw;
   text-align: left;
   margin-bottom: 1rem;
+  
+
 }
 
 .broccoliStatus{
@@ -30,12 +33,22 @@
   justify-content: space-between;
 }
 
+.broccoliStatus > button {
+  font-size: 16px;
+  border:none;
+  background-color: inherit;
+}
+
+.broccoliStatus > button:hover {
+  cursor: pointer;
+}
+
 .target {
   width: 200px;
   height: 200px;
   /* background-color: brown; */
   margin: 1rem;
-  background-image: url(../../images/broccoli.png);
+  background-image: url(/images/brotwo.png);
   background-size: cover;
   cursor: pointer;
   transition: ease-in 0.5s;
@@ -55,9 +68,10 @@
 .results{
   transition: ease-in 0.3s;
   width: 25vw;
+  font-family: "Protest Riot", sans-serif
 }
 
-.results > h3{
+.results > h2{
   margin-top: 1rem;
 }
 
@@ -69,6 +83,8 @@
   border: none;
   background-color: #FDFFFC;
   border-radius: 20px;
+  font-family: "Protest Riot", sans-serif
+
 }
 
 .resultBtn:hover {

@@ -61,14 +61,14 @@
 }
 
 .foodImg{
-  width: 320px;
-  height: 180px;
+  width: 90%;
+  height: 40%;
 }
 
 .nutrition {
   display: flex;
   justify-content:space-around;
-  width: 320px;
+  width: 100%;
   height: 120px;
   background-color: #F2FFEC;
 }
@@ -84,8 +84,8 @@ hr {
 /* Hover effect */
 
 .foodList {
-  width: 360px;
-  height: 480px;
+  width: 340px;
+  height: 420px;
   padding: 15px 20px; 
   background-color: #f5fff5;
   list-style: none;
@@ -94,12 +94,12 @@ hr {
 }
 
 .foodList .line {    
-  background-color: #6f7f74;
+  background-color: #cedec7;
   position: absolute;
 }
 
 .foodList .line span {
-  background-color: #DCE7D7;
+  background-color: #7c9183;
   position: inherit;
   display: block;
   transition: all .4s ease-out;
